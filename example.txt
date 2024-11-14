@@ -1,0 +1,46 @@
+#Requires AutoHotkey v2.0
+
+SelectFile(i := 1) {
+    if !WinExist(SelectProjectTitle) ; 检查窗口是否存在
+    {
+        MsgBox("找不到指定的窗口：" . SelectProjectTitle) ; 如果窗口不存在，显示错误信息
+        return
+    }
+
+    WinActivate(SelectProjectTitle) ; 激活窗口
+    ; 等待文件浏览器窗口弹出并激活
+    WinWaitActive(SelectProjectTitle, , 10)  ; "打开" 是文件浏览器窗口的标题，等待最多10秒
+    if !WinActive(SelectProjectTitle) {
+        MsgBox("文件浏览器窗口未能在指定时间内打开")
+        return
+    }
+
+    ; 获取目标窗口句柄
+    hWnd := WinExist(SelectProjectTitle)
+    if !hWnd {
+        MsgBox "未找到窗口！"
+        return
+    }
+
+    ; 获取 Acc 对象
+    accUtil := Acc.ElementFromHandle(hWnd)
+
+    ; 列出该目录下的所有 .pkg 文件并选择第 i 个
+    loop files, ProjectPath "\*.pkg" {
+        if (A_Index = i) {
+            fullpath := A_LoopFileFullPath
+            break
+        }
+    }
+    input := Acc.ElementFromPath("4,4,4", hWnd)
+    ; 检查是否找到按钮
+    if (input && input.Role == 42) {
+        input.Click()
+        WaitMoment()
+        SendText(fullpath) ; 输入文本
+        WaitMoment()
+        Send("{Enter}")
+    } else {
+        MsgBox("未找到按钮！")
+    }
+}

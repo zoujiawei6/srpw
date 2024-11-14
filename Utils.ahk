@@ -5,14 +5,12 @@
  * @param element {Acc.IAccessible} 要递归查找的元素
  */
 FindOpenButton(element) {
-    ; MsgBox("检查子元素1：" . element.Name . " []" . element.Children.Length . " []" . element.Role)
     for child in element.Children {
         ; 检查子元素是否为按钮，并且文本是否为“打开”
         if (child.Role = "button" && child.Name = "打开") {
-            MsgBox("找到目标按钮！")
+            ; LogInfo("FindOpenButton 找到目标按钮！")
             return child ; 返回找到的按钮
         }
-        ; MsgBox("检查子元素2：" . child.Name . " " . child.Children.Length . " " . child.Role)
 
         ; 递归查找子元素的子集
         foundButton := FindOpenButton(child)
@@ -33,26 +31,25 @@ WaitMoment(Delay := 300) {
  */
 GetHWnd(title := "") {
     if (title == "") {
+        LogInfo("GetHWnd 标题为空" . title)
         return
     }
     ; 等待窗口，超时则退出
     if !WinWait(title, , 10) {
-        MsgBox("等待超时，未能成功启动 " . title)
+        LogInfo("等待超时，未能成功启动 " . title)
         return
     }
     ; WinActivate(title) ; 激活窗口
     ; 等待文件浏览器窗口弹出并激活
     ; WinWaitActive(SelectProjectTitle, , 10)  ; "打开" 是文件浏览器窗口的标题，等待最多10秒
-    if !WinActive(title) {
-        MsgBox(title . " 窗口未能在指定时间内打开")
-        return
-    }
+
     ; 获取目标窗口句柄
     hWnd := WinExist(title)
     if (!hWnd) {
-        MsgBox("找不到指定的窗口：" . title) ; 如果窗口不存在，显示错误信息
+        LogInfo("找不到指定的窗口: " . title) ; 如果窗口不存在，显示错误信息
         return
     }
+    WinActive(title)
     return hWnd
 }
 
@@ -88,6 +85,23 @@ ClickControlWithCheck(WinTitle, ControlClass, WaitTitle, MaxAttempts := 5, WaitT
     return success
 }
 
+/**
+ * 
+ * @param {Acc.IAccessible} acc
+ */
+MouseClickCenter(accElement) {
+    ; 获取元素的位置和尺寸
+    location := accElement.Location
+
+    ; 计算元素中心的 X 和 Y 坐标
+    centerX := location.x + (location.w // 2)
+    centerY := location.y + (location.h // 2)
+
+    ; 移动鼠标到中心位置并点击左键
+    MouseClick("L", centerX, centerY)
+    LogInfo("点击位置" centerX " " centerY)
+}
+
 MouseControlClick(WinTitle, ControlClass) {
     hWnd := GetHWnd(WinTitle)
     if (!hWnd) {
@@ -110,11 +124,11 @@ MouseControlClick(WinTitle, ControlClass) {
  * @param Delay 总共等待多少秒
  * @param checkInterval 每 checkInterval 毫秒检查一次按键
  */
-WaitCheck(Delay := 200, checkInterval := 50, KeyName:="Escape") {
+WaitCheck(Delay := 200, checkInterval := 50, KeyName := "Escape") {
     totalDelay := 0
 
     ; 如果是暂停状态，进入等待，不执行后续代码
-    while(totalDelay < Delay) {
+    while (totalDelay < Delay) {
         if GetKeyState(KeyName, "P") {
             ToolTip("按下")
             return true
@@ -126,7 +140,6 @@ WaitCheck(Delay := 200, checkInterval := 50, KeyName:="Escape") {
     return false
 }
 
-
 ; 日志记录函数，接受日志消息参数并写入文件
 LogInfo(message) {
     global logFilePath
@@ -134,4 +147,49 @@ LogInfo(message) {
     logEntry := Format("[{}] {}{}", A_Now, message, "`r`n")
     ; 追加日志到文件
     FileAppend(logEntry, logFilePath, Encode)
+}
+
+/**
+ * 循环检查窗口是否为可见状态
+ * @param controlPath Acc控件路径，通过acc.ank获取
+ * @param timeout 最大等待时间，以毫秒为单位
+ */
+WaitToVisit(controlPath, timeout := 5000) {
+    hWnd := GetHWnd(PowerWriterTitle)
+    if !hWnd {
+        LogInfo("ReloadFirmware " PowerWriterTitle " 找不到此窗口" hWnd)
+        return
+    }
+
+    ; 计时器（以毫秒为单位）
+    startTime := A_TickCount
+
+    ; 循环等待控件出现并变为可见
+    while ((A_TickCount - startTime) < timeout) {
+        try
+        {
+            ; 使用 Acc.ElementFromPath 尝试获取目标控件
+            controlElement := Acc.ElementFromPath(controlPath, hWnd)
+
+            ; 检查控件是否存在并可见
+            if IsObject(controlElement) && !(controlElement.State & 32768) ; 32768 表示不可见
+            {
+                LogInfo("控件已弹出且可见: " controlPath)
+                return true
+            }
+        }
+        catch {
+            ; 若控件未找到，则继续等待
+        }
+
+        ; 每100毫秒检查一次
+        Sleep(100)
+    }
+
+    ; 若超过等待时间，未找到控件
+    if ((A_TickCount - startTime) >= timeout) {
+        LogInfo("等待超时，控件未弹出: " controlPath)
+    }
+
+    return true
 }

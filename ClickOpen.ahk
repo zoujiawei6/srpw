@@ -36,7 +36,7 @@ ClickMenuOpenButton() {
 
     ; 检查是否成功找到控件句柄
     if !toolbarHwnd {
-        LogInfo("等待超时，未找到或控件不可见：" . ToolbarClass)
+        LogInfo("等待超时，未找到或控件不可见: " . ToolbarClass)
         return
     }
 

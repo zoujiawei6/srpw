@@ -25,6 +25,6 @@ OpenSelectFile() {
         MouseControlClick(SelectProjectTitle, "选择路径") ; 点击按钮
     }
     else {
-        LogInfo("找不到指定的窗口：" . PowerWriterTitle) ; 如果窗口不存在，显示错误信息
+        LogInfo("找不到指定的窗口: " . PowerWriterTitle) ; 如果窗口不存在，显示错误信息
     }
 }
