@@ -21,7 +21,7 @@ RunPowerWriter() {
         
         ; 将窗口置于最顶层
         WinSetAlwaysOnTop(true, winID)
-        Sleep(500) ; 等待一段时间确保窗口已置顶
+        WaitMoment() ; 等待一段时间确保窗口已置顶
         ; 后续代码
         WinMaximize("ahk_exe PowerWriter.exe")
     }

@@ -7,7 +7,7 @@
  */
 ClickMenuOpenButton() {
     ; 等待窗口，超时则退出
-    if !WinWait(WinTitle, , 10) {
+    if !WinWait(PowerWriterTitle, , 10) {
         MsgBox("等待超时，未能成功启动 Power Writer。")
         ExitApp
     }
@@ -17,14 +17,14 @@ ClickMenuOpenButton() {
     
     ; 最大等待时间（秒）和检查间隔（毫秒）
     MaxWaitTime := 10
-    CheckInterval := 500
+    CheckInterval := 200
     attempt := 0
     MaxAttempts := MaxWaitTime * 1000 / CheckInterval
 
     ; 循环等待工具栏控件可见
     toolbarHwnd := 0
     while (attempt < MaxAttempts) {
-        toolbarHwnd := ControlGetHwnd(ToolbarClass, WinTitle)
+        toolbarHwnd := ControlGetHwnd(ToolbarClass, PowerWriterTitle)
         
         ; 确保找到控件句柄且控件可见
         if toolbarHwnd && ControlGetVisible(toolbarHwnd) {
@@ -42,7 +42,7 @@ ClickMenuOpenButton() {
     
 
     ; 获取目标窗口句柄
-    hWnd := WinExist(WinTitle)
+    hWnd := WinExist(PowerWriterTitle)
     if !hWnd {
         MsgBox "未找到窗口！"
         return

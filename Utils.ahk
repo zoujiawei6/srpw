@@ -22,3 +22,8 @@ FindOpenButton(element) {
   }
   return ; 未找到按钮则返回空值
 }
+
+WaitMoment()
+{
+    Sleep(300) ; 等待一段时间确保窗口已置顶
+}
