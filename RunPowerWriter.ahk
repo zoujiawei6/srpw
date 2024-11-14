@@ -18,7 +18,7 @@ RunPowerWriter() {
     {
         WinActivate(winID)
         WinWaitActive(winID) ; 等待窗口激活
-        
+
         ; 将窗口置于最顶层
         WinSetAlwaysOnTop(true, winID)
         WaitMoment() ; 等待一段时间确保窗口已置顶
@@ -29,18 +29,17 @@ RunPowerWriter() {
         ; 获取目标窗口句柄
         hWnd := WinExist(PowerWriterTitle)
         if !hWnd {
-            MsgBox "未找到窗口！"
+            LogInfo "未找到PowerWriter窗口！"
             return
         }
-    
+
         programMemory := Acc.ElementFromPath("4,1,4,3", hWnd)
-        if (programMemory.Name == "Program Memory")
-        {
+        if (programMemory.Name == "Program Memory") {
             programMemory.Click()
             WaitMoment()
         }
     }
     else {
-        MsgBox("窗口未找到！")
+        LogInfo("未找到PowerWriter窗口！")
     }
 }

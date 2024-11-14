@@ -12,22 +12,23 @@ OpenSelectFile() {
     if WinExist(PowerWriterTitle) ; 检查窗口是否存在
     {
         WinActivate(PowerWriterTitle) ; 激活窗口
-        
+
         ; 获取控件句柄
-        hwndButton := ControlGetHwnd(ClassNN, PowerWriterTitle)
-        if !hwndButton
-        {
-            MsgBox("无法找到指定的控件: " . ClassNN)
+        hWndButton := ControlGetHwnd(ClassNN, PowerWriterTitle)
+        if !hWndButton {
+            LogInfo("无法找到指定的控件: " . ClassNN)
             return
         }
 
         WinActivate(SelectProjectTitle) ; 激活窗口
-        WinWaitActive(SelectProjectTitle,,10)
-        WaitMoment(500)
+        WinWaitActive(SelectProjectTitle, , 10)
+        ; WaitMoment(500)
+        MouseControlClick(SelectProjectTitle, "选择路径") ; 点击按钮
         ; ControlClick("选择路径", SelectProjectTitle) ; 点击按钮
-        ClickControlWithCheck(SelectProjectTitle, "选择路径", FileBrowserWindow) ; 点击按钮
+        ; MouseClick()
+        ; ClickControlWithCheck(SelectProjectTitle, "选择路径", FileBrowserWindow) ; 点击按钮
     }
     else {
-        MsgBox("找不到指定的窗口：" . PowerWriterTitle) ; 如果窗口不存在，显示错误信息
+        LogInfo("找不到指定的窗口：" . PowerWriterTitle) ; 如果窗口不存在，显示错误信息
     }
 }

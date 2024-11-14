@@ -12,32 +12,40 @@ FileBrowserWindow := "Open file as..."
 ; 项目位置
 ; ProjectPath := "D:\sunricher\gf\pkgs\PKG"
 SelectProjectTitle  := "PowerWriter® 数据加密和文件路径设置"
+; 设置日志文件路径
+logFilePath := A_ScriptDir "/logs/log_" A_Now ".log" ; 文件将存储在脚本目录下
+Encode := "UTF-8"
 
 
 
 ProjectPath := "D:\sunricher\gf\PKG"
 PowerWriterPath := "D:\Users\Lenovo\AppData\Local\ICWorkShop\plug-in\PowerWriter\PowerWriter.exe"
 
-
-
-global PowerWriterTitle
-global PowerWriterPath
-global FileBrowserWindow
-global ProjectPath
-
 Main()
 {
+    LogInfo("PowerWriterTitle: " . PowerWriterTitle)
+    LogInfo("FileBrowserWindow: " . FileBrowserWindow)
+    LogInfo("SelectProjectTitle: " . SelectProjectTitle)
+    LogInfo("logFilePath: " . logFilePath)
     RunPowerWriter()
     ; 列出该目录下的所有 .pkg 文件并选择第 i 个
     loop files, ProjectPath "\*.pkg" {
         fullpath := A_LoopFileFullPath
         ; 点击第二个按钮（打开按钮）
-        ClickMenuOpenButton()
+        if(!ClickMenuOpenButton()) {
+            continue
+        }
         ; 点击选择路径
         OpenSelectFile()
         ; 选择pkg文件
         SelectFile(()=>{},fullpath)
-        break
+        ; 等待检查
+        if (WaitCheck(5000) == true)
+        {
+            MsgBox("Esc被按下")
+            ExitApp()
+            return
+        }
     }
 }
 

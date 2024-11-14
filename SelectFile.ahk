@@ -13,8 +13,10 @@ SelectFile(callback, fullpath := "") {
     Send("!N")
     SendText(fullpath)  ; 输入文件名
     Send("!O")
-    WaitMoment(500)
+    WaitMoment(1000)
     Send("{Enter}")
+
+    ; WaitMoment(1000)
 
     ; ; 获取 Acc 对象
     ; accUtil := Acc.ElementFromHandle(hWnd)

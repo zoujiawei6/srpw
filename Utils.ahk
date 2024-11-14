@@ -5,26 +5,25 @@
  * @param element {Acc.IAccessible} 要递归查找的元素
  */
 FindOpenButton(element) {
-  ; MsgBox("检查子元素1：" . element.Name . " []" . element.Children.Length . " []" . element.Role)
-  for child in element.Children {
-      ; 检查子元素是否为按钮，并且文本是否为“打开”
-      if (child.Role = "button" && child.Name = "打开" ) {
-          MsgBox("找到目标按钮！")
-          return child ; 返回找到的按钮
-      }
-      ; MsgBox("检查子元素2：" . child.Name . " " . child.Children.Length . " " . child.Role)
-      
-      ; 递归查找子元素的子集
-      foundButton := FindOpenButton(child)
-      if foundButton {
-          return foundButton ; 如果找到目标按钮，则返回
-      }
-  }
-  return ; 未找到按钮则返回空值
+    ; MsgBox("检查子元素1：" . element.Name . " []" . element.Children.Length . " []" . element.Role)
+    for child in element.Children {
+        ; 检查子元素是否为按钮，并且文本是否为“打开”
+        if (child.Role = "button" && child.Name = "打开") {
+            MsgBox("找到目标按钮！")
+            return child ; 返回找到的按钮
+        }
+        ; MsgBox("检查子元素2：" . child.Name . " " . child.Children.Length . " " . child.Role)
+
+        ; 递归查找子元素的子集
+        foundButton := FindOpenButton(child)
+        if foundButton {
+            return foundButton ; 如果找到目标按钮，则返回
+        }
+    }
+    return ; 未找到按钮则返回空值
 }
 
-WaitMoment(Delay:=300)
-{
+WaitMoment(Delay := 300) {
     Sleep(Delay) ; 等待一段时间确保窗口已置顶
 }
 
@@ -32,10 +31,8 @@ WaitMoment(Delay:=300)
  * 等待并激活窗口，获取到句柄后返回
  * @param title 
  */
-GetHWnd(title:="")
-{
-    if (title == "")
-    {
+GetHWnd(title := "") {
+    if (title == "") {
         return
     }
     ; 等待窗口，超时则退出
@@ -68,7 +65,7 @@ GetHWnd(title:="")
  * @param MaxAttempts 尝试的最大次数
  * @param WaitTime 每次点击后等待的时间
  */
-ClickControlWithCheck(WinTitle, ControlClass, WaitTitle, MaxAttempts:=5, WaitTime:=300) {
+ClickControlWithCheck(WinTitle, ControlClass, WaitTitle, MaxAttempts := 5, WaitTime := 300) {
     attempt := 0
     success := False
 
@@ -76,8 +73,7 @@ ClickControlWithCheck(WinTitle, ControlClass, WaitTitle, MaxAttempts:=5, WaitTim
     initialStatus := ControlGetText(ControlClass, WinTitle)
 
     ; 尝试点击直到成功或达到最大尝试次数
-    while attempt < MaxAttempts
-    {
+    while attempt < MaxAttempts {
         ; 执行点击
         ControlClick(ControlClass, WinTitle)
         Sleep(WaitTime) ; 等待控件响应
@@ -88,6 +84,54 @@ ClickControlWithCheck(WinTitle, ControlClass, WaitTitle, MaxAttempts:=5, WaitTim
 
         attempt++
     }
-    
+
     return success
+}
+
+MouseControlClick(WinTitle, ControlClass) {
+    hWnd := GetHWnd(WinTitle)
+    if (!hWnd) {
+        return
+    }
+
+    ; 获取按钮的坐标和大小
+    ControlGetPos(&x, &y, &w, &h, ControlClass, WinTitle)
+
+    ; 计算按钮中心位置
+    centerX := x + (w // 2)
+    centerY := y + (h // 2)
+
+    ; 将鼠标移动到按钮中心并点击
+    MouseClick('L', centerX, centerY)
+}
+
+/**
+ * 等待并检查按键有没有被按下
+ * @param Delay 总共等待多少秒
+ * @param checkInterval 每 checkInterval 毫秒检查一次按键
+ */
+WaitCheck(Delay := 200, checkInterval := 50, KeyName:="Escape") {
+    totalDelay := 0
+
+    ; 如果是暂停状态，进入等待，不执行后续代码
+    while(totalDelay < Delay) {
+        if GetKeyState(KeyName, "P") {
+            ToolTip("按下")
+            return true
+        }
+        Sleep(checkInterval) ; 暂停期间短间隔检查
+        totalDelay += checkInterval
+    }
+
+    return false
+}
+
+
+; 日志记录函数，接受日志消息参数并写入文件
+LogInfo(message) {
+    global logFilePath
+    ; 格式化日志内容，包含时间戳
+    logEntry := Format("[{}] {}{}", A_Now, message, "`r`n")
+    ; 追加日志到文件
+    FileAppend(logEntry, logFilePath, Encode)
 }
