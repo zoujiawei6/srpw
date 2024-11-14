@@ -39,7 +39,6 @@ ClickMenuOpenButton() {
         MsgBox("等待超时，未找到或控件不可见：" . ToolbarClass)
         return
     }
-    
 
     ; 获取目标窗口句柄
     hWnd := WinExist(PowerWriterTitle)
@@ -58,10 +57,12 @@ ClickMenuOpenButton() {
         ; 检查是否找到按钮
         if (button) {
             button.DoDefaultAction() ; 执行默认动作（例如点击）
+            return 1
         } else {
             MsgBox("未找到按钮！")
         }
     } catch Error as e {
         MsgBox("出现错误: " . e.Message) ; 捕获并显示异常消息
     }
+    return 0
 }

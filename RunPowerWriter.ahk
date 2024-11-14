@@ -24,6 +24,21 @@ RunPowerWriter() {
         WaitMoment() ; 等待一段时间确保窗口已置顶
         ; 后续代码
         WinMaximize("ahk_exe PowerWriter.exe")
+        WaitMoment()
+
+        ; 获取目标窗口句柄
+        hWnd := WinExist(PowerWriterTitle)
+        if !hWnd {
+            MsgBox "未找到窗口！"
+            return
+        }
+    
+        programMemory := Acc.ElementFromPath("4,1,4,3", hWnd)
+        if (programMemory.Name == "Program Memory")
+        {
+            programMemory.Click()
+            WaitMoment()
+        }
     }
     else {
         MsgBox("窗口未找到！")

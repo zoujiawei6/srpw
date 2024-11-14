@@ -21,13 +21,13 @@ OpenSelectFile() {
             return
         }
 
-        WinTitle  := "PowerWriter® 数据加密和文件路径设置"
-        WinActivate(WinTitle) ; 激活窗口
-        WinWaitActive(WinTitle,,10)
-        WaitMoment()
-        ControlClick("选择路径", WinTitle) ; 点击按钮
+        WinActivate(SelectProjectTitle) ; 激活窗口
+        WinWaitActive(SelectProjectTitle,,10)
+        WaitMoment(500)
+        ; ControlClick("选择路径", SelectProjectTitle) ; 点击按钮
+        ClickControlWithCheck(SelectProjectTitle, "选择路径", FileBrowserWindow) ; 点击按钮
     }
     else {
-        MsgBox("找不到指定的窗口：" . WinTitle) ; 如果窗口不存在，显示错误信息
+        MsgBox("找不到指定的窗口：" . PowerWriterTitle) ; 如果窗口不存在，显示错误信息
     }
 }
