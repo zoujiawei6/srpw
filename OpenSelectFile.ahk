@@ -22,11 +22,7 @@ OpenSelectFile() {
 
         WinActivate(SelectProjectTitle) ; 激活窗口
         WinWaitActive(SelectProjectTitle, , 10)
-        ; WaitMoment(500)
         MouseControlClick(SelectProjectTitle, "选择路径") ; 点击按钮
-        ; ControlClick("选择路径", SelectProjectTitle) ; 点击按钮
-        ; MouseClick()
-        ; ClickControlWithCheck(SelectProjectTitle, "选择路径", FileBrowserWindow) ; 点击按钮
     }
     else {
         LogInfo("找不到指定的窗口：" . PowerWriterTitle) ; 如果窗口不存在，显示错误信息

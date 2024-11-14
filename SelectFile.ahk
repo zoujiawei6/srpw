@@ -15,21 +15,4 @@ SelectFile(callback, fullpath := "") {
     Send("!O")
     WaitMoment(1000)
     Send("{Enter}")
-
-    ; WaitMoment(1000)
-
-    ; ; 获取 Acc 对象
-    ; accUtil := Acc.ElementFromHandle(hWnd)
-
-    ; input := Acc.ElementFromPath("4,4,4", hWnd)
-    ; ; 检查是否找到按钮
-    ; if (input && input.Role == 42) {
-    ;     input.Click()
-    ;     WaitMoment()
-    ;     SendText(fullpath) ; 输入文本
-    ;     WaitMoment()
-    ;     ; Send("{Enter}")
-    ; } else {
-    ;     MsgBox("未找到按钮！")
-    ; }
 }
