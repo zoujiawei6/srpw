@@ -53,7 +53,7 @@ Main()
     
     RunPowerWriter()
     ; 列出该目录下的所有 .pkg 文件并选择第 i 个
-    loop files, ProjectPath "\*.pkg", "D" {
+    loop files, ProjectPath "\*.pkg" {
         startTime := A_Now
         fullPath := A_LoopFileFullPath
         fileName := A_LoopFileName
