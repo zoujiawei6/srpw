@@ -28,6 +28,7 @@ WaitMoment(Delay := 300) {
 /**
  * 等待并激活窗口，获取到句柄后返回
  * @param title 
+ * @returns {Integer}
  */
 GetHWnd(title := "") {
     if (title == "") {
@@ -192,4 +193,67 @@ WaitToVisit(controlPath, timeout := 5000) {
     }
 
     return true
+}
+
+/**
+ * 提供一个oldVersion=49，newVersio=51，将name尾部的V49改为V51
+ * @param name 
+ * @param oldVersion 
+ * @param newVersion 
+ */
+UpgradeVersionName(name, oldVersion, newVersion) {
+    return RegExReplace(name, "V" oldVersion, "V" newVersion)
+}
+
+CloseMSPaintApp() {
+    ; 尝试通过窗口标题关闭画图软件
+    if WinExist("ahk_class MSPaintApp") {
+        WinClose("ahk_class MSPaintApp") ; 优雅地关闭画图软件
+        ; 如果窗口未响应，强制关闭
+        if WinExist("ahk_class MSPaintApp") {
+            WinKill("ahk_class MSPaintApp") ; 强制关闭
+        }
+        LogInfo("画图软件已关闭")
+    } else {
+        LogInfo("画图软件未运行")
+    }
+}
+
+SavePrintScreen(savepath, filename) {
+    SendEvent("{PrintScreen}")
+    WaitMoment()
+    
+    ; 打开画图软件并等待窗口加载
+    Run("mspaint.exe")
+    WinWait("ahk_class MSPaintApp") ; 等待画图软件窗口出现
+
+    SendEvent("^v")
+    WaitMoment()
+    SendEvent("^s")
+    WaitMoment()
+    SendText(filename)
+    WaitMoment()
+    SendEvent("^l")
+    WaitMoment()
+    SendText(savepath)
+    WaitMoment(500)
+    SendEvent("{Enter}")
+    WaitMoment(500)
+    hWnd := GetHWnd("保存为")
+    if hWnd {
+        saveButton := Acc.ElementFromPath("4,3,4")
+        saveButton.Click()
+        WaitMoment(500)
+        ; MouseControlClick(hWnd, saveButton)
+        ; ControlClick("ahk_id " hWnd " Button1")
+        ; WaitMoment()
+        ; SendEvent("{Enter}")
+        ; WaitMoment()
+        LogInfo("截图已保存到 " savepath)
+    } else {
+        LogInfo("未找到画图的“另存为”窗口")
+    }
+    CloseMSPaintApp()
+    WaitMoment()
+
 }

@@ -15,4 +15,5 @@ SelectFile(callback, fullpath := "") {
     Send("!O")
     WaitMoment(1000)
     Send("{Enter}")
+    LogInfo("SelectFile 已选择好要修改的文件: " fullpath)
 }

@@ -1,0 +1,309 @@
+RoleText: 窗口 Role: 9 [Location: {x:678,y:291,w:565,h:449}] [Name: PowerWriter® 数据加密和文件路径设置] [Value: ] [StateText: 可设定焦点] [State: 1310720] [Help: N/A]
+1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 可设定焦点] [State: 1081344] [DefaultAction: N/A] [Description: 含有操纵窗口的命令] [KeyboardShortcut: Alt+空间]
+1,1: RoleText: 菜单项目 Role: 12 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 有弹出菜单] [State: 1074823168] [DefaultAction: N/A] [KeyboardShortcut: 空间]
+1,1,1: RoleText: 弹出式菜单 Role: 11 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [KeyboardShortcut: N/A]
+1,1,1,1: RoleText: 菜单项目 Role: 12 [Location: {x:0,y:0,w:0,h:0}] [Name: 移动(M)] [Value: ] [StateText: 正常] [DefaultAction: 执行] [Description: N/A] [KeyboardShortcut: m] ChildId: 1
+1,1,1,2: RoleText: 菜单项目 Role: 12 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭(C)	Alt+F4] [Value: ] [StateText: 默认] [State: 256] [DefaultAction: 执行] [Description: N/A] [KeyboardShortcut: c] ChildId: 2
+2: RoleText: 标题栏 Role: 1 [Location: {x:683,y:295,w:558,h:29}] [Name: ] [Value: PowerWriter® 数据加密和文件路径设置] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+2,5: RoleText: 按下按钮 Role: 43 [Location: {x:1196,y:293,w:44,h:33}] [Name: 关闭] [Value: ] [StateText: 正常] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4: RoleText: 对话框 Role: 18 [Location: {x:681,y:324,w:557,h:412}] [Name: PowerWriter® 数据加密和文件路径设置] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: 确定]
+4,1: RoleText: 窗口 Role: 9 [Location: {x:875,y:674,w:153,h:46}] [Name: 确定] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,1,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,1,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 确定] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,1,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,1,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,1,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,1,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,1,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,1,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,1,4: RoleText: 按下按钮 Role: 43 [Location: {x:700,y:539,w:122,h:37}] [Name: 确定] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: 按]
+4,1,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,1,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,1,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,1,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,1,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,1,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,1,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,1,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,1,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,1,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,1,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,1,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,1,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,2: RoleText: 窗口 Role: 9 [Location: {x:691,y:635,w:540,h:16}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,2,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,2,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,2,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,2,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,2,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,2,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,2,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,2,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,2,4: RoleText: 文字 Role: 41 [Location: {x:691,y:635,w:540,h:16}] [Name: ] [Value: ] [StateText: 只读] [State: 64]
+4,2,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,2,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,2,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,2,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,2,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,2,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,2,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,2,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,2,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,2,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,2,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,2,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,2,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,3: RoleText: 窗口 Role: 9 [Location: {x:689,y:600,w:86,h:33}] [Name: 选择路径] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,3,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,3,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 选择路径] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,3,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,3,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,3,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,3,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,3,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,3,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,3,4: RoleText: 按下按钮 Role: 43 [Location: {x:689,y:600,w:86,h:32}] [Name: 选择路径] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: 按]
+4,3,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,3,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,3,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,3,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,3,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,3,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,3,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,3,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,3,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,3,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,3,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,3,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,3,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,4: RoleText: 窗口 Role: 9 [Location: {x:781,y:603,w:449,h:25}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,4,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,4,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,4,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,4,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,4,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,4,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,4,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,4,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,4,4: RoleText: 可编辑文本 Role: 42 [Location: {x:784,y:605,w:443,h:20}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: 选择打开或者保存的路径,留空将随机生成]
+4,4,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,4,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,4,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,4,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,4,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,4,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,4,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,4,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,4,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,4,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,4,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,4,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,4,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,5: RoleText: 窗口 Role: 9 [Location: {x:695,y:444,w:63,h:16}] [Name: 项目密码] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,5,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,5,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 项目密码] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,5,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,5,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,5,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,5,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,5,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,5,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,5,4: RoleText: 文字 Role: 41 [Location: {x:695,y:444,w:62,h:16}] [Name: 项目密码] [Value: ] [StateText: 只读] [State: 64]
+4,5,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,5,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,5,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,5,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,5,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,5,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,5,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,5,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,5,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,5,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,5,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,5,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,5,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,6: RoleText: 窗口 Role: 9 [Location: {x:685,y:418,w:554,h:106}] [Name: 密码] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,6,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,6,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 密码] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,6,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,6,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,6,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,6,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,6,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,6,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,6,4: RoleText: 分组 Role: 20 [Location: {x:685,y:418,w:553,h:106}] [Name: 密码] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: N/A]
+4,6,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,6,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,6,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,6,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,6,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,6,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,6,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,6,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,6,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,6,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,6,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,6,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,6,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,7: RoleText: 窗口 Role: 9 [Location: {x:681,y:324,w:800,h:80}] [Name: 密码] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,7,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,7,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 密码] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,7,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,7,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,7,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,7,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,7,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,7,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,7,4: RoleText: 图形 Role: 40 [Location: {x:681,y:324,w:800,h:80}] [Name: 密码] [Value: ] [StateText: 只读] [State: 64]
+4,7,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,7,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,7,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,7,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,7,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,7,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,7,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,7,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,7,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,7,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,7,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,7,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,7,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,8: RoleText: 窗口 Role: 9 [Location: {x:783,y:441,w:318,h:25}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,8,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,8,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,8,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,8,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,8,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,8,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,8,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,8,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,8,4: RoleText: 可编辑文本 Role: 42 [Location: {x:785,y:444,w:312,h:20}] [Name: ] [Value: N/A] [StateText: 受保护] [State: 537919488] [Help: 请输入项目密码，最长16个字符，可留空]
+4,8,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,8,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,8,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,8,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,8,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,8,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,8,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,8,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,8,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,8,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,8,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,8,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,8,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,9: RoleText: 窗口 Role: 9 [Location: {x:1209,y:444,w:20,h:20}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,9,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,9,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,9,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,9,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,9,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,9,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,9,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,9,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,9,4: RoleText: 按下按钮 Role: 43 [Location: {x:1209,y:444,w:20,h:20}] [Name: ] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: 按]
+4,9,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,9,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,9,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,9,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,9,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,9,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,9,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,9,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,9,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,9,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,9,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,9,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,9,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,10: RoleText: 窗口 Role: 9 [Location: {x:681,y:571,w:554,h:85}] [Name: 路径] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,10,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,10,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 路径] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,10,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,10,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,10,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,10,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,10,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,10,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,10,4: RoleText: 分组 Role: 20 [Location: {x:681,y:571,w:553,h:85}] [Name: 路径] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: N/A]
+4,10,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,10,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,10,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,10,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,10,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,10,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,10,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,10,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,10,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,10,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,10,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,10,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,10,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,11: RoleText: 窗口 Role: 9 [Location: {x:699,y:490,w:528,h:84}] [Name: 提示:
+1:可使用随机生成功能生成随机密码,提升密码的安全性。
+2:如需发布到平台,必须设定密码。] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,11,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,11,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 提示:
+1:可使用随机生成功能生成随机密码,提升密码的安全性。
+2:如需发布到平台,必须设定密码。] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,11,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,11,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,11,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,11,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,11,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,11,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,11,4: RoleText: 文字 Role: 41 [Location: {x:699,y:490,w:527,h:83}] [Name: 提示:
+1:可使用随机生成功能生成随机密码,提升密码的安全性。
+2:如需发布到平台,必须设定密码。] [Value: ] [StateText: 只读] [State: 64]
+4,11,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,11,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,11,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,11,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,11,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,11,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,11,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,11,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,11,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,11,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,11,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,11,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,11,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+4,12: RoleText: 窗口 Role: 9 [Location: {x:1105,y:440,w:94,h:29}] [Name: 随机生成] [Value: ] [StateText: 可设定焦点] [State: 1048576] [Help: N/A]
+4,12,1: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 系统] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵窗口的命令]
+4,12,2: RoleText: 标题栏 Role: 1 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: 随机生成] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 显示窗口名称并包含操纵窗口的控件]
+4,12,2,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 输入法] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 按键时会带出键盘] ChildId: 1
+4,12,2,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最小化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将窗口移开] ChildId: 2
+4,12,2,3: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 最大化] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 使窗口全屏显示] ChildId: 3
+4,12,2,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上下文帮助] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 进入或退出上下文相关的帮助模式] ChildId: 4
+4,12,2,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 关闭] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 关闭窗口] ChildId: 5
+4,12,3: RoleText: 菜单栏 Role: 2 [Location: {x:0,y:0,w:0,h:0}] [Name: 应用程序] [Value: ] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 含有操纵当前查看或文档的命令]
+4,12,4: RoleText: 按下按钮 Role: 43 [Location: {x:1105,y:440,w:93,h:28}] [Name: 随机生成] [Value: ] [StateText: 可设定焦点] [State: 1048576] [DefaultAction: 按]
+4,12,5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+4,12,5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+4,12,5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+4,12,5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+4,12,5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+4,12,5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+4,12,6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+4,12,6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+4,12,6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+4,12,6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+4,12,6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+4,12,6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+4,12,7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]
+5: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 垂直滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改垂直方向查看区域]
+5,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 上一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动一行] ChildId: 1
+5,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向上翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向上移动数行] ChildId: 2
+5,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的垂直位置，并可以通过拖动直接进行更改] ChildId: 3
+5,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向下翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动数行] ChildId: 4
+5,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 下一行] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将垂直位置向下移动一行] ChildId: 5
+6: RoleText: 滚动条 Role: 3 [Location: {x:0,y:0,w:0,h:0}] [Name: 水平滚动条] [Value: 0] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 用来更改水平方向查看区域]
+6,1: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 左移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动一列] ChildId: 1
+6,2: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向左翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向左移动数列] ChildId: 2
+6,3: RoleText: 指示器 Role: 39 [Location: {x:0,y:0,w:0,h:0}] [Name: 位置] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: N/A] [Description: 指明当前的水平位置，并可以通过拖动直接进行更改] ChildId: 3
+6,4: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 向右翻页] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动数列] ChildId: 4
+6,5: RoleText: 按下按钮 Role: 43 [Location: {x:0,y:0,w:0,h:0}] [Name: 右移一列] [Value: N/A] [StateText: 不可见] [State: 32768] [DefaultAction: 按] [Description: 将水平位置向右移动一列] ChildId: 5
+7: RoleText: 底框 Role: 4 [Location: {x:0,y:0,w:0,h:0}] [Name: ] [Value: ] [StateText: 不可见] [State: 32769]

@@ -49,21 +49,18 @@ ClickMenuOpenButton() {
 
     ; 获取 Acc 对象
     accUtil := Acc.ElementFromHandle(hWnd)
+    
+    ; 使用 ElementFromPath 按路径查找目标元素
+    button := accUtil["4", "4", "4", "2"] ; 按层级路径查找“打开”按钮
 
-    try {
-        ; 使用 ElementFromPath 按路径查找目标元素
-        button := accUtil["4", "4", "4", "2"] ; 按层级路径查找“打开”按钮
-
-        ; 检查是否找到按钮
-        if (button) {
-            button.DoDefaultAction() ; 执行默认动作（例如点击）
-            return 1
-        } else {
-            LogInfo("未找到按钮！")
-            return 0
-        }
-    } catch Error as e {
-        LogInfo("出现错误: " . e.Message) ; 捕获并显示异常消息
+    ; 检查是否找到按钮
+    if (button) {
+        button.DoDefaultAction() ; 执行默认动作（例如点击）
+        LogInfo("ClickMenuOpenButton 点击按钮: " button.Name)
+        return 1
+    } else {
+        LogInfo("未找到按钮！")
+        return 0
     }
     return 0
 }
