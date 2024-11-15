@@ -49,6 +49,7 @@ Main()
     ;     ReloadFirmware(fileName)
     ;     break
     ; }
+    now := A_Now
     
     RunPowerWriter()
     ; 列出该目录下的所有 .pkg 文件并选择第 i 个
@@ -56,6 +57,7 @@ Main()
         startTime := A_Now
         fullPath := A_LoopFileFullPath
         fileName := A_LoopFileName
+        FileAppend(fileName, A_ScriptDir "\logs\files_log_" now ".txt", Encode)
         LogInfo("正在处理文件 " . fileName . " ...")
         
         ; 点击第二个按钮（打开按钮）
@@ -71,7 +73,10 @@ Main()
         endTime := A_Now
         LogInfo("本次用时: " . (endTime - startTime))
         LogInfo("`r`n`r`n`r`n")
-        break
+
+        ; 暂歇两秒,否则电脑压力太大
+        WaitMoment(2000)
+        ; break
         
         ; 等待检查
         ; if (WaitCheck(5000) == true)

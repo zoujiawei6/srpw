@@ -122,7 +122,7 @@ SaveAsPkgFirmware(filename) {
     WaitMoment()
     Send("{Enter}")
     ; 确认另存为
-    WaitMoment()
+    WaitMoment(500)
     Send("{Enter}")
     LogInfo("ReloadFirmware 已进行文件另存为操作")
     LogInfo("ReloadFirmware 文件名中的版本号已更新: " filename)
@@ -157,6 +157,7 @@ SaveAsZpkgFirmware(filename) {
     WaitMoment()
     SendEvent("{Alt}s")
     WaitMoment()
+    
     SavePrintScreen(CheckImageSavePath "\", filename "_" A_Now ".png")
     SendEvent("{Enter}")
     LogInfo("ReloadFirmware 已进行zpkg文件的保存操作")
@@ -192,6 +193,7 @@ ReloadFirmware(filename) {
     }
     if (!InStr(rowName, OldVersion)) {
         LogInfo("ReloadFirmware 列名中的版本号不正确" rowName "所需版本号: " OldVersion)
+        ExitApp()
         return
     }
 
@@ -205,5 +207,5 @@ ReloadFirmware(filename) {
     AddFirmware(hWnd)
     SelectFirmware(hWnd)
     SaveAsPkgFirmware(filename)
-    ; SaveAsZpkgFirmware(filename)
+    SaveAsZpkgFirmware(filename)
 }
