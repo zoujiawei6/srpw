@@ -13,7 +13,7 @@ SelectFile(callback, fullpath := "") {
     Send("!N")
     SendText(fullpath)  ; 输入文件名
     Send("!O")
-    WaitMoment(1000)
+    WaitMoment(500)
     Send("{Enter}")
     LogInfo("SelectFile 已选择好要修改的文件: " fullpath)
 }

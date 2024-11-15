@@ -40,7 +40,6 @@ Main()
     LogInfo("FileBrowserWindow: " . FileBrowserWindow)
     LogInfo("SelectProjectTitle: " . SelectProjectTitle)
     DirCreate(CheckImageSavePath)
-    WaitMoment(2000)
     ; 切换到英文输入法  0409 是英语语言代码； 0804 是中文语言代码
     DllCall("LoadKeyboardLayout", "Str", "0409", "UInt", 1)
 
@@ -71,14 +70,16 @@ Main()
         
         endTime := A_Now
         LogInfo("本次用时: " . (endTime - startTime))
+        LogInfo("`r`n`r`n`r`n")
+        break
         
         ; 等待检查
-        if (WaitCheck(5000) == true)
-        {
-            LogInfo("Esc被按下")
-            ExitApp()
-            return
-        }
+        ; if (WaitCheck(5000) == true)
+        ; {
+        ;     LogInfo("Esc被按下")
+        ;     ExitApp()
+        ;     return
+        ; }
     }
 }
 

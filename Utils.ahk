@@ -21,7 +21,7 @@ FindOpenButton(element) {
     return ; 未找到按钮则返回空值
 }
 
-WaitMoment(Delay := 300) {
+WaitMoment(Delay := 200) {
     Sleep(Delay) ; 等待一段时间确保窗口已置顶
 }
 
@@ -226,6 +226,10 @@ SavePrintScreen(savepath, filename) {
     ; 打开画图软件并等待窗口加载
     Run("mspaint.exe")
     WinWait("ahk_class MSPaintApp") ; 等待画图软件窗口出现
+
+    ; 将窗口置于最顶层
+    WinSetAlwaysOnTop(true, "ahk_class MSPaintApp")
+    WaitMoment() ; 等待一段时间确保窗口已置顶
 
     SendEvent("^v")
     WaitMoment()

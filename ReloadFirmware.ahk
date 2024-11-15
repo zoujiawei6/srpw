@@ -40,7 +40,7 @@ DeleteFirmware(hWnd) {
     deleteFirmware.Click()
 
     ; 等待删除固件成功的弹窗
-    WaitMoment(1000)
+    WaitMoment(500)
     ; 关闭弹窗
     Send("{Enter}")
     WaitMoment()
@@ -118,7 +118,7 @@ SaveAsPkgFirmware(filename) {
     WaitMoment()
     Send("{Enter}")
     WaitMoment()
-    SendText(SaveAsPath filename) ; 输入文本
+    SendText(SaveAsPath "\" filename) ; 输入文本
     WaitMoment()
     Send("{Enter}")
     ; 确认另存为
@@ -205,5 +205,5 @@ ReloadFirmware(filename) {
     AddFirmware(hWnd)
     SelectFirmware(hWnd)
     SaveAsPkgFirmware(filename)
-    SaveAsZpkgFirmware(filename)
+    ; SaveAsZpkgFirmware(filename)
 }

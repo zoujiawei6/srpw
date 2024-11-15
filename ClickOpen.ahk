@@ -8,7 +8,8 @@
 ClickMenuOpenButton() {
     ; 等待窗口，超时则退出
     if !WinWait(PowerWriterTitle, , 10) {
-        LogInfo("等待超时，未能成功启动 Power Writer。")
+        LogInfo("等待超时，未能成功启动 Power Writer。退出程序")
+        ExitApp()
         return
     }
 
